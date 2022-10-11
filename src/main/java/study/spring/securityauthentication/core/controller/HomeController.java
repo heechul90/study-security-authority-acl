@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 
     @GetMapping(value = "/")
-    public String index(0) {
+    public String index() {
         return "index";
     }
 
