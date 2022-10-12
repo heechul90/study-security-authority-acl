@@ -1,4 +1,4 @@
-package study.spring.securityauthentication.core.domain.student;
+package study.spring.securityauthentication.core.domain.teacher;
 
 import lombok.*;
 import org.springframework.security.core.Authentication;
@@ -12,12 +12,13 @@ import java.util.HashSet;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Builder
-public class StudentAuthenticationToken implements Authentication {
+public class TeacherAuthenticationToken implements Authentication {
 
-    private Student principal;
+    private Teacher principal;
     private String credentials;
     private String details;
     private boolean authenticated;
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
