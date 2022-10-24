@@ -25,6 +25,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
 
+    implementation 'org.springframework.security:spring-security-acl'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'net.sf.ehcache:ehcache'
+
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'
